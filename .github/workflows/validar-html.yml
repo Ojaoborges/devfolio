@@ -1,0 +1,24 @@
+# .github/workflows/validar-html.yml
+name: Validar HTML
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar validador de HTML
+        run: npm install -g html-validate
+
+      - name: Validar index.html
+        run: html-validate index.html
+
+      - name: Mostrar mensagem de sucesso
+        run: echo "HTML do DevFolio validado com sucesso"
