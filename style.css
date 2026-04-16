@@ -12,7 +12,7 @@ header {
   padding: 60px 20px 40px;
   border-bottom: 1px solid #1e293b;
 }
-header h1 { font-size: 2.5rem; color: #4ade80; }
+header h1 { font-size: 2.5rem; color: #22d3ee; }
 .subtitulo  { color: #94a3b8; margin-top: 8px; }
 main { max-width: 760px; margin: 0 auto; padding: 40px 20px; }
 section { margin-bottom: 48px; }
@@ -31,4 +31,22 @@ footer { text-align: center; padding: 24px; color: #475569; font-size: 0.85rem; 
   border-radius: 50%;
   border: 3px solid #4ade80;
   margin-bottom: 16px;
+}
+.projeto-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.projeto-card h3 { color: #f1f5f9; margin-bottom: 8px; }
+.projeto-card p { color: #94a3b8; font-size: 0.9rem; }
+.tags { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+.tags span {
+  background: rgba(74,222,128,.1);
+  color: #4ade80;
+  border: 1px solid rgba(74,222,128,.25);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
 }
