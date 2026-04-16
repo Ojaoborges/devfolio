@@ -50,3 +50,23 @@ footer { text-align: center; padding: 24px; color: #475569; font-size: 0.85rem; 
   border-radius: 20px;
   font-size: 0.8rem;
 }
+#toggle-tema {
+  margin-top: 14px;
+  background: transparent;
+  border: 1px solid #4ade80;
+  color: #4ade80;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+#toggle-tema:hover { background: #4ade80; color: #0f172a; }
+
+body.tema-claro { background: #f8fafc; color: #1e293b; }
+body.tema-claro header { border-color: #e2e8f0; }
+body.tema-claro header h1,
+body.tema-claro h2 { color: #16a34a; }
+body.tema-claro .projeto-card { background: #f1f5f9; border-color: #e2e8f0; }
+body.tema-claro .projeto-card h3 { color: #1e293b; }
+body.tema-claro .projeto-card p { color: #64748b; }

@@ -13,6 +13,16 @@
        class="foto-perfil">
     <h1>[João Vitor]</h1>
     <p class="subtitulo">Desenvolvedor em formacao · FIEC / SEDUC-SP</p>
+      <button id="toggle-tema" onclick="alternarTema()">Tema claro</button>
+
+  <script>
+  function alternarTema() {
+    document.body.classList.toggle('tema-claro');
+    const btn = document.getElementById('toggle-tema');
+    btn.textContent = document.body.classList.contains('tema-claro')
+      ? 'Tema escuro' : 'Tema claro';
+  }
+  </script>
   </header>
   <main>
     <section id="sobre">
